@@ -3,7 +3,7 @@ import React, { useReducer } from "react";
 import ColorChange from "../../components/ColorChange";
 
 const reducer = (state, action) => {
-  console.log(action);
+  //console.log(action);
   switch (action.type) {
     case "changeRed":
       return state.red + action.payload > 255 || state.red + action.payload < 0

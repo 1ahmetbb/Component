@@ -2,7 +2,7 @@ import { FlatList, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 export default function  () {
-  const courses = [
+  const Courses = [
     { name: "Angular", id: 1 },
     { name: "React Js", id: 2 },
     { name: "C#", id: 3 },
@@ -11,7 +11,7 @@ export default function  () {
   ];
   return (
     <FlatList
-      data={courses}
+      data={Courses}
       keyExtractor={(item)=>item.id}
       renderItem={({ item }) => {
         return <Text style={styles.content} >{item.name}</Text>;

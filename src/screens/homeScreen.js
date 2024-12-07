@@ -1,7 +1,7 @@
 import { Button, StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-export default function homeScreen({ navigation }) {
+export default function HomeScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Text>Ana Ekran</Text>
@@ -20,13 +20,18 @@ export default function homeScreen({ navigation }) {
       />
 
       <Button
-        title = "Kutu Uygulamasi"
+        title="Kutu Uygulamasi"
         onPress={() => navigation.navigate("Kutu Uygulamasi")}
       />
 
-      <Button 
+      <Button
         title="Renk Degistir"
-        onPress={()=>navigation.navigate("Renk Degistir")}
+        onPress={() => navigation.navigate("Renk Degistir")}
+      />
+
+      <Button
+        title="Sifre Ekrani"
+        onPress={() => navigation.navigate("Sifre Ekrani")}
       />
     </View>
   );

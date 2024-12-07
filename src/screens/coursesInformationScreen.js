@@ -2,7 +2,7 @@ import { ScrollView, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import Information from "../../components/Information";
 
-export default function coursesInformation() {
+export default function CoursesInformation() {
   return (
     <ScrollView>
       <Information
