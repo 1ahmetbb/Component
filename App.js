@@ -8,6 +8,7 @@ import CounterScreen from "./src/screens/CounterScreen.js";
 import BoxScreen from "./src/screens/BoxScreen.js";
 import ColorChangeScreen from "./src/screens/ColorChangeScreen.js";
 import PasswordScreen from "./src/screens/PasswordScreen.js";
+import DesingScreen from "./src/screens/DesingScreen.js";
 
 const Stack = createNativeStackNavigator();
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
         <Stack.Screen name="Kutu Uygulamasi" component={BoxScreen} />
         <Stack.Screen name="Renk Degistir" component={ColorChangeScreen} />
         <Stack.Screen name="Sifre Ekrani" component={PasswordScreen} />
+        <Stack.Screen name="Dizayn Ekrani" component={DesingScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

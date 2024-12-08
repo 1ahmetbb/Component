@@ -33,6 +33,11 @@ export default function HomeScreen({ navigation }) {
         title="Sifre Ekrani"
         onPress={() => navigation.navigate("Sifre Ekrani")}
       />
+
+      <Button 
+        title="Dizayn Ekrani"
+        onPress={()=> navigation.navigate("Dizayn Ekrani")}
+      />
     </View>
   );
 }
